@@ -1,0 +1,203 @@
+/*** GENERAL ***/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1em/1.5 'Arial';
+    min-width: 550px;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+/*** MAIN-CONTENT ***/
+
+.main-content {
+    height: 0;
+    overflow: hidden;
+    transition: height .7s;
+}
+
+.status-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.reveal {
+    font-size: 1.3em;
+    font-weight: bold;
+    width:80%;
+    height: 50px;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius:3px 3px;
+    cursor: pointer;
+    transition: width .5s;
+}
+
+.current-status {
+    margin: 20px 0 0;
+    padding: 10px 0 0;
+}
+
+.current-status h3 {
+    font-size: 1.7em;
+    margin-top: 15px;
+}
+
+.status {
+    margin: 5px 0;
+    padding-left: 10px;
+    line-height: 50px;  
+    font-weight: bold;
+    height: 50px;
+    border-radius: 2px;
+}
+
+.updates {
+    margin: 50px 0 0 5px;
+}
+
+.updates h3 {
+    font-size: 1.4em;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.info {
+    height: 50px;
+    overflow: hidden;
+    transition: height .5s, transform .5s;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.info p {
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.info span {
+    font-weight: 100;
+}
+
+/*** PSUEDO-CLASSES ***/
+
+.info:hover {
+    height: 290px;
+    transform: translateX(10px);
+    background-color: aliceblue;
+}
+
+.current-status:hover {
+    background-color: aliceblue;
+}
+
+.reveal:hover {
+    color: rgb(96, 125, 139);
+}
+
+.reveal:active {
+    transform: translateY(5px);
+    box-shadow: inset 0px 1.5px 8px 1px rgba(0, 0, 0, 0.95);
+    outline: none;
+}
+
+/*** STYLE-GRIDS ***/
+
+.green {
+    border-left: 10px solid rgb(76, 175, 80);
+}
+
+.green::after {
+    content: 'Current status: Good.';
+}
+
+.red {
+    border-left: 10px solid rgba(249, 73, 60, 0.99);
+}
+
+.red::after {
+    content: 'Current status: There are some issues.';
+}
+
+.sliding {
+    height: 900px;
+}
+
+/*** COLORS ***/
+
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+.wrapper {
+    background-color: white;
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,.7);
+}
+
+.reveal {
+    background-color: #4caf50;
+    box-shadow: -1.5px -1.5px 5px rgba(0,0,0,.8);
+    color: white;
+}
+
+.status {   
+    background-color: rgb(233, 233, 233);
+    box-shadow:  -1.5px -1.5px 5px rgba(0,0,0,.8);
+}
+
+.updates h4 {
+    color: rgb(226, 114, 106);
+}
+
+/*** MEDIA-QUERRIES ***/
+
+@media screen and (min-width: 800px) {
+    
+    h2, .reveal, .status-content {
+        margin-left: 50px;
+    }
+
+    h2 {
+        text-align: left;      
+        font-size: 1.9em;
+    }
+
+    .reveal {
+        width: 300px;
+        font-size: 1.2em;
+    }
+
+    .status {
+        width: 90%;
+    }
+
+    .status-content {
+        width: 50%;
+    }
+
+    .info:hover {
+        height: 215px;
+        transform: translateX(10px);
+        background-color: aliceblue;
+    }
+}
