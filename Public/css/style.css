@@ -102,7 +102,7 @@ h2 {
 /*** PSUEDO-CLASSES ***/
 
 .info:hover {
-    height: 290px;
+    height: 340px;
     transform: translateX(10px);
     background-color: aliceblue;
 }
@@ -140,7 +140,7 @@ h2 {
 }
 
 .sliding {
-    height: 900px;
+    height: 1100px;
 }
 
 /*** COLORS ***/
@@ -196,7 +196,7 @@ body {
     }
 
     .info:hover {
-        height: 215px;
+        height: 275px;
         transform: translateX(10px);
         background-color: aliceblue;
     }
