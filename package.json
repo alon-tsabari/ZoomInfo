@@ -1,20 +1,17 @@
 {
-  "name": "ZoomInfo",
+  "name": "new",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "Alon Tsabari",
+  "author": "alon tsabari",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
-    "node-rest-client": "^2.0.1",
-    "nodemon": "^1.11.0"
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0"
   }
 }
