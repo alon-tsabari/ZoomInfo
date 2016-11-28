@@ -196,7 +196,7 @@ body {
     }
 
     .info:hover {
-        height: 275px;
+        height: 310px;
         transform: translateX(10px);
         background-color: aliceblue;
     }
