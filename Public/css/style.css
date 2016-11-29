@@ -86,7 +86,6 @@ h2 {
     overflow: hidden;
     transition: height .5s, transform .5s;
     margin-bottom: 10px;
-    display: inline-block;
     margin-left: 20px;
 }
 
